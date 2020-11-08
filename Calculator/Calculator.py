@@ -1,7 +1,7 @@
 from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
 from Calculator.Division import division
-
+from Calculator.Multiplication import multiply
 
 class Calculator:
     result = 0
@@ -22,5 +22,5 @@ class Calculator:
         return self.result
 
     def multiply(self, a, b):
-        self.result = multiplicate(a, b)
+        self.result = multiply(a, b)
         return self.result

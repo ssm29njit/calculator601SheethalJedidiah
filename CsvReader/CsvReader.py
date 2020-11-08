@@ -2,7 +2,7 @@ import csv
 from Fileutilities.absolutepath import absolutepath
 
 
-def classFactory(class_name, dictionary):
+def ClassFactory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
 
 
