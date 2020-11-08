@@ -1,3 +1,4 @@
+from Calculator.Multiplication import multiplicate
 from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
 from Calculator.Division import division
