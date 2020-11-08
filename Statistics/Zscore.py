@@ -1,12 +1,19 @@
 #mport numpy as np
 #from scipy import stats
 from Statistics.randomNum import getRandomNum
+from Statistics.Mean import mean
+from Statistics.stdeviation import stdev
 
 def zscore(data):
-    arr = [[],[]]
-    #return stats.zscore( return statistics.mode(sample)
-    #for i in data:
-       # z = (i - mean) / std
-        #if z > threshold:
-         #   outlier.append(i)
-    #print('outlier in dataset is', outlier)
+    meann = mean(data)
+    stdv = stdev(data)
+    outlier =[]
+    threshold = meann
+    for i in data:
+        z = (i-mean)/stdv
+        try:
+            if z > threshold:
+                outlier.append(z)
+        except:
+            print('No Outlier cannot be added')
+

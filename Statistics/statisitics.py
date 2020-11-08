@@ -3,8 +3,8 @@ from Statistics.Mean import mean
 from Statistics.Variance import varianceX
 from Statistics.mode import mmode
 from Statistics.stdeviation import stdev
-from Statistics.randomMean import randomMean
-
+from Statistics.randomMean import sample
+from Statistics.Zscore import zscore
 
 class Statistics(Calculator):
 
@@ -13,7 +13,7 @@ class Statistics(Calculator):
         return self.result
 
     def random_mean(self, data):
-        self.result = randomMean(data)
+        self.result = sample(data)
         return self.result
 
     def mode(self,data):
@@ -26,4 +26,8 @@ class Statistics(Calculator):
 
     def standardDeviation(self, data):
         self.result = stdev(data)
+        return self.result
+
+    def zscore(self,data):
+        self.result = zscore(data)
         return self.result
