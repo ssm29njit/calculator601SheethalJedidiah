@@ -13,7 +13,7 @@ class Statistics(Calculator):
         return self.result
 
     def random_mean(self, data):
-        self.result = randoMean(data)
+        self.result = randomMean(data)
         return self.result
 
     def mode(self,data):

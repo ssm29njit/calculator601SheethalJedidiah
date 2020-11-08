@@ -3,7 +3,7 @@ from Calculator.Division import division
 from Statistics.randomNum import getRandomNum
 
 
-def randoMean(data, sample_size):
+def randomMean(data, sample_size):
     total = 0
     # check that get sample returns the proper number of samples
     # check that sample size is not 0
