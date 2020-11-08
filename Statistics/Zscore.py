@@ -1,5 +1,5 @@
-import numpy as np
-from scipy import stats
+#mport numpy as np
+#from scipy import stats
 from Statistics.randomNum import getRandomNum
 
 def zscore(data):
