@@ -10,4 +10,5 @@ script:
 branches:
   only:
     - main
+    - stats
     - development
