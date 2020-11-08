@@ -1,6 +1,6 @@
 from Calculator.Addition import addition
 from Calculator.Division import division
-from Statistics.Getsample import getSample
+from Statistics.randomNum import getRandomNum
 
 
 def random_mean(data, sample_size):
